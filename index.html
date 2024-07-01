@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Fan</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url(keke.jpg);
+            background-size: cover;
+        }
+
+        .fan {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ddd, #bbb);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .blade {
+            position: absolute;
+            width: 20px;
+            height: 100px;
+            background-color: #333;
+            top: 10px;
+            left: 50%;
+            transform-origin: bottom center;
+        }
+
+        .blade:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .blade:nth-child(2) {
+            transform: rotate(120deg);
+        }
+
+        .blade:nth-child(3) {
+            transform: rotate(240deg);
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fan {
+            animation: spin 2s linear infinite;
+        }
+    </style>
+    <h2 style="color: pink;">WEBSITE ASTIG</h2>
+</head>
+<body>
+    <a href="lotm.html">Electric fan na astig owemji</a>
+    <div class="fan">
+        <div class="blade"></div>
+        <div class="blade"></div>
+        <div class="blade"></div>
+    </div>
+    <h2 style="color: pink;">WEBSITE ASTIG</h2>
+</body>
+</html>
